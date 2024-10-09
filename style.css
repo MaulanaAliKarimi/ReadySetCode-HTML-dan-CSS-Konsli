@@ -1,0 +1,72 @@
+.header {
+    padding: 0px 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+  }
+
+  section {
+    margin: 40px 80px;
+  }
+  
+  #introduction {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #D3BCCC;
+    padding-bottom: 24px;
+  }
+  
+  #introduction img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  #introduction h2 {
+    font-size: 48px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .project {
+    border-radius: 5%;
+    border: 3px solid #ccc;
+    border-color: blue;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  img:hover {
+    transform: scale(0.5);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+  }
+
+  @media only screen and (max-width: 968px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media only screen and (max-width: 670px) {
+  .project-container {
+      grid-template-columns: 1fr; 
+  }
+}
